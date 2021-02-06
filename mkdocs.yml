@@ -13,3 +13,6 @@ markdown_extensions:
 nav:
   - Home: "index.md"
   - DataTypes: "dtypes.md"
+  - Importing: "import.md"
+  - API:
+    - List: "list.md" 
