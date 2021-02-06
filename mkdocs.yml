@@ -8,3 +8,5 @@ theme:
     scheme: slate
     primary: cyan
     accent: cyan
+  markdown_extensions:
+  - admonition
