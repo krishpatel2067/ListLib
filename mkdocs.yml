@@ -3,7 +3,6 @@ theme:
   name: material
   features:
     - navigation.sections
-    - navigation.expand
   palette:
     scheme: slate
     primary: cyan

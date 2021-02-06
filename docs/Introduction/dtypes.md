@@ -14,3 +14,5 @@ There are three main datatypes in ListLib:
 
 !!! info "Beta"
     Matricies are in Beta as of now, so expect some bugs/limited functionality. Report any concerns [here](https://devforum.roblox.com/t/greetings/164871?u=thecarbyneuniverse "ListLib Official Release Post")
+
+More datatypes may be added in the future.
