@@ -235,7 +235,7 @@ print(MyList)
 print(MyList:Reverse())
 
 --both give:
---List({eight, 7, 6, 5, 4, three, true, 1}) 
+--List({5, 4, three, true, 1}) 
 ```
 
 ### Shuffle
@@ -270,6 +270,7 @@ An iterator function that works like Python's `zip`. You can give as many `itera
 ```lua
 local someTable = {5, 4, 3, 2, 1, 0}
 local str = "hello"
+local MyList = List.new({1, true, three, 4, 5, 6, 7, eight})
 
 for i, v1, v2, v3 in MyList:Zip(someTable, str) do
     print(i, v1, v2, v3)
@@ -285,8 +286,26 @@ end
 
 ]]
 ```
+Here's what happening above:
+
+|Index|Value1|Value2|Value3|
+|---|---|---|---|
+|`1`|`1`|`5`|`h`|
+|`2`|`true`|`4`|`e`|
+|`3`|`three`|`3`|`l`|
+|`4`|`4`|`2`|`l`|
+|`5`|`5`|`1`|`o`|
+
 
 !!! info
-    Zipping will end when the end the of the shortest `iterable` is reached. In the above example, since the word string `str` was the shortest out of the three with length of 5, the zipping stopped at index 5.
+    Zipping will end when the end the of the shortest `iterable` is reached. In the above example, since the string `str` was the shortest out of the three with the length of 5, the zipping stopped at index 5.
+
+If the above kept on going until the end of the longest `iterable`, it would look like this:
+
+|Index|Value1|Value2|Value3|
+|---|---|---|---|
+|`6`|`6`|`0`|`nil`|
+|`7`|`7`|`nil`|`nil`|
+|`8`|`eight`|`nil`|`nil`|
 
 ## Events
