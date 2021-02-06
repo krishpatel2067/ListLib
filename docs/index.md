@@ -1,17 +1,13 @@
-# Welcome to MkDocs
+# Home
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+ListLib is a library that wraps regular Lua tables and adds much more functionality to them. Current Lua tables are very limited and don't cover most common use cases such as reversing, slicing, and replacing.
 
-## Commands
+My original inspiration was Python's Numpy module, which is much larger than ListLib. This started off with me practicing OOP, until I started drifting towards creating something I wanted to publish. 
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+There are three main datatypes introduced:
 
-## Project layout
+* List
+* NumList
+* Matrix
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+**List**s are the very basic between the three because they add a relatively basic functionality to regular tables.  
