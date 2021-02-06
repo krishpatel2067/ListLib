@@ -1,8 +1,6 @@
 site_name: ListLib Documentation
 theme:
   name: material
-  features:
-    - navigation.sections
   palette:
     scheme: slate
     primary: cyan
@@ -12,3 +10,7 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
   - attr_list
+nav:
+  - Home: "index.md"
+  - Installation: "installation.md"
+  - DataTypes: "dtypes.md"
