@@ -1,4 +1,5 @@
 site_name: My Docs
 theme:
   name: material
-  scheme: slate
+  palette:
+    scheme: slate
