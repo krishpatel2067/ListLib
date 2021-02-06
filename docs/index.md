@@ -6,3 +6,5 @@ My original inspiration was Python's Numpy module, which is much larger than Lis
 
 !!! info
     Report bugs and request features in [this DevForum post](https://devforum.roblox.com/t/greetings/164871?u=thecarbyneuniverse "ListLib Official Release Post").
+
+Get the module [here]( "Official Model").

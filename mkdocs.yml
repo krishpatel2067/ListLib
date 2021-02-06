@@ -12,5 +12,4 @@ markdown_extensions:
   - attr_list
 nav:
   - Home: "index.md"
-  - Installation: "installation.md"
   - DataTypes: "dtypes.md"
