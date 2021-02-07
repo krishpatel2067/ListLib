@@ -1,7 +1,7 @@
 # List
 **API Reference**
 
-A List is essentially an ordered array with added functionalities. As with normal arrays, the indices must be numbers, but the values can be anything.
+A `List` is essentially an ordered array with added functionalities. As with normal arrays, the indices must be numbers, but the values can be anything.
 
 !!! Note
     This only shows the API that is for consumer use; hidden API is not listed.  
@@ -21,7 +21,7 @@ local MyList = List.new({1, true, "three", 4, 5})
 print(MyList) --List({1, true, three, 4, 5}) 
 ```
 ### fillWith
-> **Parameters** (`number` count, `variant` value)
+> **Parameters** (`int` count, `variant` value)
 
 Essentially `table.create`; creates a array of `count` number of `value`s.
 
