@@ -6,6 +6,7 @@ A List is essentially an ordered array with added functionalities. As with norma
 !!! Note
     This only shows the API that is for consumer use; hidden API is not listed.  
 
+If you plan on dealing with only numerical values, then consider using NumLists instead, which have specialized mathematical and calculative functions.
 ___
 
 ## Constructors
