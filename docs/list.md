@@ -99,6 +99,30 @@ print(first, last) --1 5
 ```
 Similarily, if you don't anticipate using `self`, then you always use `.` (e.g. `MyList.SomeFunction()`).
 
+### AddProperty
+*`void`*
+
+> **Parameters** (`string` name, `variant` value)
+
+Creates a custom property with name `name` and a default value of `value`, which can be anything but a function (for that use `List:AddFunction`).
+
+**Using List:AddFunction and List:AddProperty**
+```lua
+--this basically checks if the "owner" of the list is a certain username, which will
+--control how the custom method will behave (it's pointless; just demonstration purposes)
+
+MyList:AddProperty('Owner', 'TheCarbyneUniverse')
+MyList:AddFunction('IsStolen', function(self)
+
+    return not self.Owner == 'TheCarbyneUniverse'
+
+end)
+
+print(MyList:IsStolen()) --false
+MyList.Owner = 'coefficients'
+print(MyList:IsStolen()) --true
+
+```
 ### Append
 *`void`*
 
