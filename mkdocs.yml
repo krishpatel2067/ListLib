@@ -1,10 +1,16 @@
 site_name: ListLib Documentation
 theme:
   name: material
+  logo: ListLib_Icon.png
+  favicon: ListLib_Icon.png
+  font:
+    code: Roboto Mono
   palette:
     scheme: slate
     primary: cyan
     accent: cyan
+  features:
+    
 markdown_extensions:
   - admonition
   - pymdownx.details

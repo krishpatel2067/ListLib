@@ -13,6 +13,6 @@ There are three main datatypes in ListLib:
 A `Matrix` is the most unique datatype out of the three. They are internally Lists containing NumLists because matricies only allow numerical values. Matricies allow for functions such as cofactor, inverse, etc.
 
 !!! info "Beta"
-    Matricies are in Beta as of now, so expect some bugs/limited functionality. Report any concerns [here](https://devforum.roblox.com/t/greetings/164871?u=thecarbyneuniverse "ListLib Official Release Post")
+    Matricies are in Beta as of now, so expect some bugs/limited functionality. Report any concerns [here](https://devforum.roblox.com/t/greetings/164871?u=thecarbyneuniverse "ListLib Official Release Post").
 
-More datatypes may be added in the future.
+More datatypes may be added in the future if necessary.
