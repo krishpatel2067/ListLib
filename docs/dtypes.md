@@ -6,7 +6,7 @@ There are three main datatypes in ListLib:
 * NumList
 * Matrix
 
-`List`s are the very basic between the three because they add a relatively basic functionality to regular tables such as manipulation (reverse, replace, etc.) and utility (find, slice, etc.). Lists allow values of any datatype.
+`List`s are the very basic between the three because they add a relatively minimal functionality to regular tables such as manipulation (reverse, replace, etc.) and utility (find, slice, etc.). Lists allow values of any datatype.
 
 `NumList`s, as they may imply, are inherited from Lists, but with the added restriction of only numbers. This allows for various mathamatical funtions such as sum, product, min/max, and stats.
 
