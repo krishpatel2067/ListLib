@@ -23,7 +23,7 @@ nav:
   - API:
     - List: "list.md" 
     - NumList: "numlist.md"
-copyright: '&copy; 2021 TheCarbyneUniverse.'
+copyright: '&copy; 2021 TheCarbyneUniverse'
 extra:
   social:
     - icon: fontawesome/brands/twitter
