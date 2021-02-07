@@ -2,7 +2,7 @@ site_name: ListLib Documentation
 theme:
   name: material
   logo: ListLib_Icon.png
-  favicon: ListLib_Icon.png
+  favicon: ListLib_Favicon.png
   font:
     code: Roboto Mono
   palette:
