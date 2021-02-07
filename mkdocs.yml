@@ -16,3 +16,4 @@ nav:
   - Importing: "import.md"
   - API:
     - List: "list.md" 
+    - NumList: "numlist.md"
