@@ -221,12 +221,16 @@ Returns an iterator function and behaves just like Lua `pairs`. If the script yo
 ```lua
 --script that requires ListLib
 for i, v in pairs(MyList) do
+
     print(i, v)
+
 end
 
 --script that does NOT require ListLib
 for i, v in MyList:Pairs() do
+
     print(i, v)
+
 end
 ```
 ### Remove
@@ -320,7 +324,9 @@ local str = "hello"
 local MyList = List.new({1, true, three, 4, 5, 6, 7, eight})
 
 for i, v1, v2, v3 in MyList:Zip(someTable, str) do
+
     print(i, v1, v2, v3)
+
 end
 
 --[[output:
