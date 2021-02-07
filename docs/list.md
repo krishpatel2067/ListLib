@@ -76,6 +76,29 @@ print(MyList.__type) --List
 ```
 ___
 ## Functions
+### AddFunction
+*`void`*
+
+> **Parameters** (`string` name, `function` func)
+
+Creates a custom method for that List object with the given `name` and `func`. When calling, any parameters passed can be recieved by the given `func`. Speaking of calling, you can call using both `.` and `:`; in the latter, `func`'s first parameter will always be `self`, in the former, this will not happen.
+
+```lua
+--our function here will get the first and last element from the list
+MyList:AddFunction('GetEnds', function(self, ...)
+
+    print(...) --just demonstration purposes
+    return self[1], self[self.Length]
+
+end)
+
+local first, last =  MyList:GetEnds('random', 'args')
+--prints: random, args
+
+print(first, last) --1 5
+```
+Similarily, if you don't anticipate using `self`, then you always use `.` (e.g. `MyList.SomeFunction()`).
+
 ### Append
 *`void`*
 
