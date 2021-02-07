@@ -356,3 +356,42 @@ If the above kept on going until the end of the longest `iterable`, it would loo
 |`8`|`eight`|`nil`|`nil`|
 
 ## Events
+The following events will only fire when the actual List elements are altered, *not* when a property or function is. That is, doing `List.Alias = 'something'` will not fire, but doing `List[1] = 2` will.
+### Added
+> **Parameters** (`number` index, `variant` value)
+
+Every time a new index is made, the event fires with that new `index` and the `value`.
+
+```lua
+MyList.Added:Connect(function(i, v)
+
+    print('index added:', i, '\nvalue added:', v)
+
+end)
+```
+
+### Changed
+> **Parameters** (`number` index, `variant` oldValue, `variant` newValue)
+
+When you alter an existing index, the event fires with that `index`, the original `oldValue`, and the replacing `newValue`. Using `List:Append` will run this event sequentially with the order of the arguments. Note: the event will only fire if `newValue` is *not* equal to `oldValue`.
+
+```lua
+MyList.Changed:Connect(function(i, vOld, vNew)
+
+    print('index changed:', i, '\nold value:', vOld, '\nnew value:', vNew)
+
+end)
+```
+
+### Removed
+> **Parameters** (`number` index, `variant` value)
+
+When an existing index is removed (either by setting to `nil` or `List:Remove`), the event fires with the `index` and `value`, both of each will be removed.
+
+```lua
+MyList.Removed:Connect(function(i, v)
+
+    print('index removed:', i, '\nvalue removed:', v)
+
+end)
+```
