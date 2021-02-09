@@ -6,14 +6,13 @@ The structure for ListLib is as follows:
 ListLib
     List
     NumList
-    Matrix
 ```
 
-To easily load all the modules, you can require the base `ListLib` module which returns a function to import the other three:
+To easily load all the modules, you can require the base `ListLib` module which returns a function to import the other two:
 
 ```lua
 local import = require(ListLib)
-local List, NumList, Matrix = import("List", "NumList", "Matrix")
+local List, NumList = import("List", "NumList")
 ```
 The importation will return the module functionality in the order of parameters.
 

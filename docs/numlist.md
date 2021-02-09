@@ -28,5 +28,12 @@ Works just like `List.fillWith` except that the values must always be numerical.
 ### fillNormal
 > **Parameters** (`int` count, `number` avg, `number` std)
 
-Creates a normalized distribution with `count` number of values and with the given mean of `avg` and standard deviation of `std`. The precision will be up to 2 decimal places, but can be increased in the future.
+Creates a normalized distribution with `count` number of values and with the given mean of `avg` and standard deviation of `std`. 
 
+```lua
+local MyNumList = NumList.fromNormal(10, 5, 10)
+print(MyNumList:GetAvg()) --5
+print(MyNumList:GetStd()) --10
+```
+!!! note
+    Due to floating point errors that may occasionally arise, the average and standard deviation may be ever-so-slightly off (i.e. something like `5.0000000012` instead of `5`).
