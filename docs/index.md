@@ -4,7 +4,9 @@ ListLib is a powerful library that wraps regular Luau tables and adds much more 
 
 My original inspiration was Python's Numpy module, although it is much larger than ListLib. This started off with me practicing OOP, until I started drifting towards creating something I wanted to publish.
 
-!!! info
-    Report bugs and request features in [this DevForum post](https://devforum.roblox.com/t/greetings/164871?u=thecarbyneuniverse "ListLib Official Release Post").
+___
 
-Get the module [here]( "Official Model").
+[Get the module](#){: .md-button }
+[Report bugs & request features](https://devforum.roblox.com/t/greetings/164871?u=thecarbyneuniverse){: .md-button }
+
+___
