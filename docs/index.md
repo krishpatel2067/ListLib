@@ -8,6 +8,6 @@ ___
 
 Report bugs and request features here:
 
-[Official release post](https://devforum.roblox.com/t/greetings/164871?u=thecarbyneuniverse){: .md-button }
+[Official release post](https://devforum.roblox.com/t/introducing-listlib-luau-tables-made-powerful-v1-0-0/1038349?u=thecarbyneuniverse){: .md-button }
 
 ___
