@@ -13,7 +13,7 @@
 
       "ListLib": {
         "$classname": "Folder",
-        "$path": "Scripts"
+        "$path": "src/Scripts"
       }
       
     }
