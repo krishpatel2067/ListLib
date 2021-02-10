@@ -181,28 +181,28 @@ print(MyNumList:ToBase(16)) --{"5A", "5C", "5E", "60", "62", "64"}
 ### Inherited from `List`
 These functions are inherited from `List` and are also available with `NumList` (only with slight modifications to accept only numbers, for example):
 
-* `NumList:Clear()`
-* `NumList:Empty()`
-* `NumList:Clone()`
-* `NumList:Append()`
-* `NumList:Replace()`
-* `NumList:Remove()`
-* `NumList:RemoveDuplicates()`
-* `NumList:Select()`
-* `NumList:Pairs()`
-* `NumList:Zip()`
-* `NumList:Find()`
-* `NumList:Sort()`
-* `NumList:Reverse()`
-* `NumList:Count()`
-* `NumList:CountValues()`
+* `NumList:Append`
+* `NumList:Clear`
+* `NumList:Clone`
+* `NumList:Count`
+* `NumList:CountValues`
+* `NumList:Destroy`
+* `NumList:Empty`
+* `NumList:Find`
+* `NumList:Pairs`
+* `NumList:Remove`
+* `NumList:RemoveDuplicates`
+* `NumList:Replace`
+* `NumList:Reverse`
+* `NumList:Select`
+* `NumList:Sort`
+* `NumList:Zip`
 ___
 
 ## Events
-
 ### Inherited from `List`
 These events work the same as they do with `List`:
 
-* `Changed`
 * `Added`
+* `Changed`
 * `Removed`

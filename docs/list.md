@@ -264,7 +264,7 @@ print(MyList[1]) --1
 MyList:Destroy()
 
 print(MyList[1]) --nil
-print(MyList:GetSum()) --error
+print(MyList:Append(2)) --error
 ```
 ### Empty
 *`void`*
