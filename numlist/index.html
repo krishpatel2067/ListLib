@@ -1,0 +1,1107 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../ListLib_Favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.8">
+    
+    
+      
+        <title>NumList - ListLib Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.cb6bc1d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.39b8e14a.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#00bdd6">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="cyan" data-md-color-accent="cyan">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#numlist" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href=".." title="ListLib Documentation" class="md-header-nav__button md-logo" aria-label="ListLib Documentation">
+      
+  <img src="../ListLib_Icon.png" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      <div class="md-header-nav__ellipsis">
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            ListLib Documentation
+          </span>
+        </div>
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            
+              NumList
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="ListLib Documentation" class="md-nav__button md-logo" aria-label="ListLib Documentation">
+      
+  <img src="../ListLib_Icon.png" alt="logo">
+
+    </a>
+    ListLib Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dtypes/" class="md-nav__link">
+        DataTypes
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../import/" class="md-nav__link">
+        Importing
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+      
+      <label class="md-nav__link" for="nav-4">
+        API
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="API" data-md-level="1">
+        <label class="md-nav__title" for="nav-4">
+          <span class="md-nav__icon md-icon"></span>
+          API
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../list/" class="md-nav__link">
+        List
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          NumList
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        NumList
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#class-properties" class="md-nav__link">
+    Class Properties
+  </a>
+  
+    <nav class="md-nav" aria-label="Class Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from-list" class="md-nav__link">
+    Inherited from List
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constructors" class="md-nav__link">
+    Constructors
+  </a>
+  
+    <nav class="md-nav" aria-label="Constructors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#new" class="md-nav__link">
+    new
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fromnormal" class="md-nav__link">
+    fromNormal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fillwith" class="md-nav__link">
+    fillWith
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fromrandom" class="md-nav__link">
+    fromRandom
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fromrange" class="md-nav__link">
+    fromRange
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linspace" class="md-nav__link">
+    linspace
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    Properties
+  </a>
+  
+    <nav class="md-nav" aria-label="Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from-list_1" class="md-nav__link">
+    Inherited from List
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#functions" class="md-nav__link">
+    Functions
+  </a>
+  
+    <nav class="md-nav" aria-label="Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getavg" class="md-nav__link">
+    GetAvg
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getfivepointsummary" class="md-nav__link">
+    GetFivePointSummary
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getmad" class="md-nav__link">
+    GetMAD
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getmax" class="md-nav__link">
+    GetMax
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getmedian" class="md-nav__link">
+    GetMedian
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getmin" class="md-nav__link">
+    GetMin
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getmode" class="md-nav__link">
+    GetMode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getproduct" class="md-nav__link">
+    GetProduct
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getq1" class="md-nav__link">
+    GetQ1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getq3" class="md-nav__link">
+    GetQ3
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getrange" class="md-nav__link">
+    GetRange
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getstats" class="md-nav__link">
+    GetStats
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getstd" class="md-nav__link">
+    GetStd
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getsum" class="md-nav__link">
+    GetSum
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tobase" class="md-nav__link">
+    ToBase
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from-list_2" class="md-nav__link">
+    Inherited from List
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#events" class="md-nav__link">
+    Events
+  </a>
+  
+    <nav class="md-nav" aria-label="Events">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from-list_3" class="md-nav__link">
+    Inherited from List
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/" class="md-nav__link">
+        Features
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#class-properties" class="md-nav__link">
+    Class Properties
+  </a>
+  
+    <nav class="md-nav" aria-label="Class Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from-list" class="md-nav__link">
+    Inherited from List
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constructors" class="md-nav__link">
+    Constructors
+  </a>
+  
+    <nav class="md-nav" aria-label="Constructors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#new" class="md-nav__link">
+    new
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fromnormal" class="md-nav__link">
+    fromNormal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fillwith" class="md-nav__link">
+    fillWith
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fromrandom" class="md-nav__link">
+    fromRandom
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fromrange" class="md-nav__link">
+    fromRange
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linspace" class="md-nav__link">
+    linspace
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    Properties
+  </a>
+  
+    <nav class="md-nav" aria-label="Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from-list_1" class="md-nav__link">
+    Inherited from List
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#functions" class="md-nav__link">
+    Functions
+  </a>
+  
+    <nav class="md-nav" aria-label="Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getavg" class="md-nav__link">
+    GetAvg
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getfivepointsummary" class="md-nav__link">
+    GetFivePointSummary
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getmad" class="md-nav__link">
+    GetMAD
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getmax" class="md-nav__link">
+    GetMax
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getmedian" class="md-nav__link">
+    GetMedian
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getmin" class="md-nav__link">
+    GetMin
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getmode" class="md-nav__link">
+    GetMode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getproduct" class="md-nav__link">
+    GetProduct
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getq1" class="md-nav__link">
+    GetQ1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getq3" class="md-nav__link">
+    GetQ3
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getrange" class="md-nav__link">
+    GetRange
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getstats" class="md-nav__link">
+    GetStats
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getstd" class="md-nav__link">
+    GetStd
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getsum" class="md-nav__link">
+    GetSum
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tobase" class="md-nav__link">
+    ToBase
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from-list_2" class="md-nav__link">
+    Inherited from List
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#events" class="md-nav__link">
+    Events
+  </a>
+  
+    <nav class="md-nav" aria-label="Events">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inherited-from-list_3" class="md-nav__link">
+    Inherited from List
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="numlist">NumList</h1>
+<p><strong>API Reference</strong></p>
+<p><code>NumList</code>s are <code>List</code>s that are specialized for numbers. It inherits the methods and properties from <code>List</code>, but has certain added on top. The datatype supports a number base system upon creation and conversion up to hexadecimal. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This only shows the API that is for consumer use; hidden API is not listed.  </p>
+</div>
+<hr />
+<h2 id="class-properties">Class Properties</h2>
+<h3 id="inherited-from-list">Inherited from <code>List</code></h3>
+<ul>
+<li><code>Inline</code></li>
+<li><code>MaxDisplay</code></li>
+</ul>
+<p><code>ShowDataTypeContents</code> is not inherited since the only datatype supported is numbers.</p>
+<hr />
+<h2 id="constructors">Constructors</h2>
+<h3 id="new">new</h3>
+<blockquote>
+<p><strong>Parameters</strong> (<code>table</code> array, <code>int</code> base = 10)</p>
+</blockquote>
+<p>Creates a new <code>NumList</code> with the given <code>array</code> (filled with numbers only) and an optional <code>base</code>, which defaults to 10. For other bases, use strings in the array to preserve their numerical representation. If the strings are invalid (i.e. higher than base 16 or plain words), <code>NumList</code> will rasie an error something along the lines of <code>NumList creation: an error occurred</code>.</p>
+<p>However, despite the base given, the numbers will always be converted to base 10.</p>
+<div class="highlight"><pre><span></span><code><span class="c1">--we will use this for future examples</span>
+
+<span class="c1">--binary inputs</span>
+<span class="kd">local</span> <span class="n">MyNumList</span> <span class="o">=</span> <span class="n">NumList</span><span class="p">.</span><span class="n">new</span><span class="p">({</span><span class="s1">&#39;1010&#39;</span><span class="p">,</span> <span class="s1">&#39;1001&#39;</span><span class="p">,</span> <span class="s1">&#39;1000&#39;</span><span class="p">,</span> <span class="s1">&#39;0111&#39;</span><span class="p">,</span> <span class="s1">&#39;0110&#39;</span><span class="p">,</span> <span class="s1">&#39;0101&#39;</span><span class="p">},</span> <span class="mi">2</span><span class="p">)</span> <span class="c1">--must include 2, else it will error!</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">MyNumList</span><span class="p">)</span> <span class="c1">--NumList({10, 9, 8, 7, 6, 5})</span>
+</code></pre></div>
+<h3 id="fromnormal">fromNormal</h3>
+<blockquote>
+<p><strong>Parameters</strong> (<code>int</code> count, <code>number</code> avg, <code>number</code> std)</p>
+</blockquote>
+<p>Creates a normalized distribution with <code>count</code> number of values and with the given mean of <code>avg</code> and standard deviation of <code>std</code>. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Due to floating point errors that may occasionally arise, the average and standard deviation may be ever-so-slightly off (i.e. something like <code>5.0000000012</code> instead of <code>5</code>).</p>
+</div>
+<h3 id="fillwith">fillWith</h3>
+<blockquote>
+<p><strong>Parameters</strong> (<code>int</code> count, <code>number</code> value)</p>
+</blockquote>
+<p>Works just like <code>List.fillWith</code> except that the values must always be numerical.</p>
+<h3 id="fromrandom">fromRandom</h3>
+<blockquote>
+<p><strong>Parameters</strong> (<code>number</code> min, <code>number</code> max, <code>int</code> count)</p>
+</blockquote>
+<p>Creates <code>count</code> number of elements which are random numbers between the given <code>min</code> and <code>max</code>, which can be decimals.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">MyNumList</span> <span class="o">=</span> <span class="n">NumList</span><span class="p">.</span><span class="n">fromRandom</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.55</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">MyNumList</span><span class="p">)</span> <span class="c1">--NumList({0.41, 0.18, 0.5, 0.44, 0.45})</span>
+</code></pre></div>
+<h3 id="fromrange">fromRange</h3>
+<blockquote>
+<p><strong>Parameters</strong> (<code>number</code> min, <code>number</code> max, <code>number</code> step = 1, <code>int</code> base = 10)</p>
+</blockquote>
+<p>Similar to Python's <code>numpy.arange</code>; creates an array from <code>min</code> to <code>max</code>, incrementing by the optional <code>step</code>. The inputs for those three can be given in strings in case they are non-base 10 numbers.</p>
+<div class="highlight"><pre><span></span><code><span class="c1">--array from 90-100 with inc 2 in the hexadecimal number system</span>
+<span class="kd">local</span> <span class="n">MyNumList</span> <span class="o">=</span> <span class="n">NumList</span><span class="p">.</span><span class="n">fromRange</span><span class="p">(</span><span class="s1">&#39;5A&#39;</span><span class="p">,</span> <span class="s1">&#39;64&#39;</span><span class="p">,</span> <span class="s1">&#39;2&#39;</span><span class="p">,</span> <span class="mi">16</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">MyNumList</span><span class="p">)</span> <span class="c1">--NumList({90, 92, 94, 96, 98, 100})</span>
+</code></pre></div>
+<h3 id="linspace">linspace</h3>
+<blockquote>
+<p><strong>Parameters</strong> (<code>number</code> min, <code>number</code> max, <code>int</code> count)</p>
+</blockquote>
+<p>Just like <code>numpy.linspace</code>; it creates an array from <code>min</code> to <code>max</code> with the given <code>count</code> such that each number is spaced out by an event, automatically-calculated increment (unlike <code>NumList.fromRange</code>).</p>
+<p><div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">MyNumList</span> <span class="o">=</span> <span class="n">NumList</span><span class="p">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">MyNumList</span><span class="p">)</span> <span class="c1">--NumList({1, 3.25, 5.5, 7.75, 10})</span>
+</code></pre></div>
+Above, the increment is 2.25 (which can be calculated by <code>(max - min) / (count - 1)</code>).</p>
+<hr />
+<h2 id="properties">Properties</h2>
+<h3 id="inherited-from-list_1">Inherited from <code>List</code></h3>
+<p>These properties are inherited from <code>List</code> and work the same way:
+* <code>Alias</code>
+* <code>Length</code>
+* <code>__type</code></p>
+<hr />
+<h2 id="functions">Functions</h2>
+<h3 id="getavg">GetAvg</h3>
+<p><em><code>number</code></em>
+Gets the average of the numbers, equivalent to doing <code>NumList:GetSum() / NumList.Length</code>.</p>
+<h3 id="getfivepointsummary">GetFivePointSummary</h3>
+<p><em><code>table</code></em></p>
+<p>Gets the box-plot-related stats (minimum, first quartile, median, third quartile, and maximum) in a dictionary with the keys:
+* <code>Min</code>
+* <code>Q1</code>
+* <code>Median</code>
+* <code>Q3</code>
+* <code>Max</code></p>
+<h3 id="getmad">GetMAD</h3>
+<p><em><code>number</code></em>
+Gets the mean absolute deviation of the <code>NumList</code>; the length must be greater than 0, else an error will be raised.</p>
+<h3 id="getmax">GetMax</h3>
+<p><em><code>number</code></em></p>
+<p>Gets the maximum value from the <code>NumList</code>.</p>
+<h3 id="getmedian">GetMedian</h3>
+<p><em><code>number</code></em></p>
+<p>Gets the median of the <code>NumList</code>.</p>
+<h3 id="getmin">GetMin</h3>
+<p><em><code>number</code></em></p>
+<p>Gets the minimum value from the <code>NumList</code>.</p>
+<h3 id="getmode">GetMode</h3>
+<p><em><code>table</code></em>
+Gets the mode of the set and returns the values in a table (since multiple values can appear the same number of times). If every value appears exactly once in the set, the mode will be <code>nil</code>.</p>
+<h3 id="getproduct">GetProduct</h3>
+<p><em><code>number</code></em>
+Simply gets the product of all the elements in the <code>NumList</code>.</p>
+<h3 id="getq1">GetQ1</h3>
+<p><em><code>number</code></em></p>
+<p>Gets the first quartile of the set.</p>
+<h3 id="getq3">GetQ3</h3>
+<p><em><code>number</code></em>
+Gets the third quartile of the set.</p>
+<h3 id="getrange">GetRange</h3>
+<p><em><code>number</code></em>
+Gets the range, the difference between the maximum and the minimum.</p>
+<h3 id="getstats">GetStats</h3>
+<p><em><code>table</code></em></p>
+<p>Gets <em>all</em> the stats in a dictionary, with the keys:
+* <code>Min</code>
+* <code>Q1</code>
+* <code>Median</code>
+* <code>Q3</code>
+* <code>Max</code>
+* <code>Range</code>
+* <code>Sum</code>
+* <code>Product</code>
+* <code>Avg</code>
+* <code>Std</code>
+* <code>MAD</code>
+* <code>Mode</code> </p>
+<p>For <code>Mode</code>, the value will be <code>"None"</code> to represent <code>nil</code> because else the key will be non-existent.</p>
+<h3 id="getstd">GetStd</h3>
+<p><em><code>number</code></em>
+Gets the population standard deviation of the set of numbers; the length of the <code>NumList</code> must be greater than 1, else it will raise an error.</p>
+<h3 id="getsum">GetSum</h3>
+<p><em><code>number</code></em></p>
+<p>Simply gets the sum of all the elements in the <code>NumList</code>.</p>
+<h3 id="tobase">ToBase</h3>
+<p><em><code>table</code></em>
+<strong>Parameters</strong> (<code>int</code> base)</p>
+<p>Converts the current base-10 <code>NumList</code> values to the given <code>base</code>, which will be returned as a table (<em>not</em> a NumList) with string values. Also works with decimals.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">MyNumList</span> <span class="o">=</span> <span class="n">NumList</span><span class="p">.</span><span class="n">new</span><span class="p">({</span><span class="mi">90</span><span class="p">,</span> <span class="mi">92</span><span class="p">,</span> <span class="mi">94</span><span class="p">,</span> <span class="mi">96</span><span class="p">,</span> <span class="mi">98</span><span class="p">,</span> <span class="mi">100</span><span class="p">})</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">MyNumList</span><span class="p">:</span><span class="n">ToBase</span><span class="p">(</span><span class="mi">16</span><span class="p">))</span> <span class="c1">--{&quot;5A&quot;, &quot;5C&quot;, &quot;5E&quot;, &quot;60&quot;, &quot;62&quot;, &quot;64&quot;}</span>
+</code></pre></div>
+<h3 id="inherited-from-list_2">Inherited from <code>List</code></h3>
+<p>These functions are inherited from <code>List</code> and are also available with <code>NumList</code> (only with slight modifications to accept only numbers, for example):</p>
+<ul>
+<li><code>NumList:Append</code></li>
+<li><code>NumList:Clear</code></li>
+<li><code>NumList:Clone</code></li>
+<li><code>NumList:Count</code></li>
+<li><code>NumList:CountValues</code></li>
+<li><code>NumList:Destroy</code></li>
+<li><code>NumList:Empty</code></li>
+<li><code>NumList:Find</code></li>
+<li><code>NumList:Pairs</code></li>
+<li><code>NumList:Remove</code></li>
+<li><code>NumList:RemoveDuplicates</code></li>
+<li><code>NumList:Replace</code></li>
+<li><code>NumList:Reverse</code></li>
+<li><code>NumList:Select</code></li>
+<li><code>NumList:Sort</code></li>
+<li><code>NumList:Zip</code></li>
+</ul>
+<hr />
+<h2 id="events">Events</h2>
+<h3 id="inherited-from-list_3">Inherited from <code>List</code></h3>
+<p>These events work the same as they do with <code>List</code>:</p>
+<ul>
+<li><code>Added</code></li>
+<li><code>Changed</code></li>
+<li><code>Removed</code></li>
+</ul>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../list/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                List
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../features/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Features
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            &copy; 2021 TheCarbyneUniverse
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+  <div class="md-footer-social">
+    
+      
+      
+      <a href="https://twitter.com/CarbyneUniverse" target="_blank" rel="noopener" title="TheCarbyneUniverse on Twitter" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+      </a>
+    
+      
+      
+      <a href="https://github.com/TheCarbyneUniverse" target="_blank" rel="noopener" title="TheCarbyneUniverse on Github" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+      </a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.18f0862e.min.js"></script>
+      <script src="../assets/javascripts/bundle.994580cf.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.9c0e82ba.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
