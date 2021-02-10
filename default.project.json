@@ -12,7 +12,7 @@
       "$className": "ServerScriptService",
 
       "ListLib": {
-        "$classname": "Folder",
+        "$className": "Folder",
         "$path": "src/Scripts"
       }
       
