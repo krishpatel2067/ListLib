@@ -23,6 +23,7 @@ nav:
   - API:
     - List: "list.md" 
     - NumList: "numlist.md"
+  - Features: "features.md"
 copyright: '&copy; 2021 TheCarbyneUniverse'
 extra:
   social:
