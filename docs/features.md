@@ -73,3 +73,15 @@ print(MyNumList + 2) --NumList({3, 4, 5, 6, 7})
 print(MyNumList * {2, 3, 4, 5, 6}) --NumList({2, 6, 12, 20, 30})
 print(MyNumList / {1, 2}) --error (not equal length)
 ```
+## Raising Errors
+ListLib tries its best to catch errors with parameters and arguments, so you are able to fix the issue without having to sort through the internal code. Usually it's in the format of:
+
+```
+[action]: [reason]
+```
+For example, for slicing a `NumList`, if you input non-intengers as the input, you may see:
+
+```
+slicing: inputs must be integers
+```
+Additionally, the output should also show the line numbers of your script and not the internal module scripts, although in certain cases with 2+ stacks, this can point to internal code.
