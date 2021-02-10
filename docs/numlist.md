@@ -7,6 +7,14 @@
     This only shows the API that is for consumer use; hidden API is not listed.  
 
 ___
+## Class Properties
+
+### Inherited from `List`
+* `Inline`
+* `MaxDisplay`
+
+`ShowDataTypeContents` is not inherited since the only datatype supported is numbers.
+___
 ## Constructors
 ### new
 > **Parameters** (`table` array, `int` base = 10)
@@ -81,11 +89,11 @@ ___
 ## Functions
 
 ### GetAvg
-`number`
+*`number`*
 Gets the average of the numbers, equivalent to doing `NumList:GetSum() / NumList.Length`.
 
 ### GetFivePointSummary
-`table`
+*`table`*
 
 Gets the box-plot-related stats (minimum, first quartile, median, third quartile, and maximum) in a dictionary with the keys:
 * `Min`
@@ -95,46 +103,46 @@ Gets the box-plot-related stats (minimum, first quartile, median, third quartile
 * `Max`
 
 ### GetMAD
-`number`
+*`number`*
 Gets the mean absolute deviation of the `NumList`; the length must be greater than 0, else an error will be raised.
 
 ### GetMax
-`number`
+*`number`*
 
 Gets the maximum value from the `NumList`.
 
 ### GetMedian
-`number`
+*`number`*
 
 Gets the median of the `NumList`.
 ### GetMin
-`number`
+*`number`*
 
 Gets the minimum value from the `NumList`.
 
 ### GetMode
-`table`
+*`table`*
 Gets the mode of the set and returns the values in a table (since multiple values can appear the same number of times). If every value appears exactly once in the set, the mode will be `nil`.
 
 ### GetProduct
-`number`
+*`number`*
 Simply gets the product of all the elements in the `NumList`.
 
 ### GetQ1
-`number`
+*`number`*
 
 Gets the first quartile of the set.
 
 ### GetQ3
-`number`
+*`number`*
 Gets the third quartile of the set.
 
 ### GetRange
-`number`
+*`number`*
 Gets the range, the difference between the maximum and the minimum.
 
 ### GetStats
-`table`
+*`table`*
 
 Gets *all* the stats in a dictionary, with the keys:
 * `Min`
@@ -152,15 +160,15 @@ Gets *all* the stats in a dictionary, with the keys:
 
 For `Mode`, the value will be `"None"` to represent `nil` because else the key will be non-existent.
 ### GetStd
-`number`
+*`number`*
 Gets the population standard deviation of the set of numbers; the length of the `NumList` must be greater than 1, else it will raise an error.
 ### GetSum
-`number`
+*`number`*
 
 Simply gets the sum of all the elements in the `NumList`.
 
 ### ToBase
-`table`
+*`table`*
 **Parameters** (`int` base)
 
 Converts the current base-10 `NumList` values to the given `base`, which will be returned as a table (*not* a NumList) with string values. Also works with decimals.

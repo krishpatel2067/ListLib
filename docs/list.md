@@ -10,8 +10,32 @@ If you plan on dealing with only numerical values, then consider using [NumLists
 ___
 ## Class Properties
 These properties apply to every object of the class.
+
+### Inline
+*`boolean`*
+
+If true, the `List` will display in a single-line and will wrap depending on the output window. If false, each element will drop to a new line--this is perfect for long datatypes such as CFrame, which would look like a mess if all in one-line:
+
+```lua
+--above example
+--default Inline = true
+
+print(MyList) --List({Vector3[], ColorSequenceKeypoint[], CatalogSearchParams[]})
+
+List.Inline = false
+
+print(MyList) 
+--[[
+    
+List({Vector3[],
+      ColorSequenceKeypoint[],
+      CatalogSearchParams[]})
+
+]]
+```
 ### MaxDisplay
 *`int`*
+
 Denotes the maximum number of elements to fully show when printing before it condenses into a `a, b, c...x, y, z` structure.
 
 ```lua
@@ -31,6 +55,7 @@ print(MyList) --List({a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q})
 ```
 ### ShowDataTypeContents
 *`boolean`*
+
 If true, the `List` will show the parameters inside of the datatypes within (such as `CFrame`, `Vector3`, etc.), else it will appear blank:
 
 ```lua
@@ -48,7 +73,7 @@ List.ShowDataTypeContents = true
 
 print(MyList) --List({Vector3[15, 25, 35], ColorSequenceKeypoint[0.5, (1, 1, 1)], CatalogSearchParams["", 0-2147483647, Relevance, None, {...}, {...}]})
 ```
-
+___
 ## Constructors
 ### new
 > **Parameters** (`table` array)
