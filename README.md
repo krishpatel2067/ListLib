@@ -1,4 +1,5 @@
 # ListLibDocs
-The code for documentation site for ListLib.
+ListLib is a powerful table wrapper capable of adding immense functionality to regular Luau tables. You can perform operations, slice, reverse, replace, and more with ease!
 
-Not much to see to be honest...
+[Model](https://www.roblox.com/library/6374598616/ListLib)
+[Documentation](https://thecarbyneuniverse.github.io/ListLib/)
