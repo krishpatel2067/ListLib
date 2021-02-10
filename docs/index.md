@@ -7,6 +7,6 @@ My original inspiration was Python's Numpy module, although it is much larger th
 ___
 
 [Get the module](#){: .md-button }
-[Report bugs & request features](https://devforum.roblox.com/t/greetings/164871?u=thecarbyneuniverse){: .md-button }
+[Official release post](https://devforum.roblox.com/t/greetings/164871?u=thecarbyneuniverse){: .md-button }
 
 ___
