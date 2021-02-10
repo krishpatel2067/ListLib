@@ -5,6 +5,8 @@
 
 !!! Note
     This only shows the API that is for consumer use; hidden API is not listed.  
+
+___
 ## Constructors
 ### new
 > **Parameters** (`table` array, `int` base = 10)
@@ -66,7 +68,14 @@ local MyNumList = NumList.linspace(1, 10, 5)
 print(MyNumList) --NumList({1, 3.25, 5.5, 7.75, 10})
 ```
 Above, the increment is 2.25 (which can be calculated by `(max - min) / (count - 1)`).
+___
+## Properties
 
+### Inherited from `List`
+These properties are inherited from `List` and work the same way:
+* `Alias`
+* `Length`
+* `__type`
 ___
 
 ## Functions

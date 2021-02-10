@@ -8,6 +8,46 @@ A `List` is essentially an ordered array with added functionalities. As with nor
 
 If you plan on dealing with only numerical values, then consider using [NumLists](numlist.md) instead, which have specialized mathematical and calculative functions.
 ___
+## Class Properties
+These properties apply to every object of the class.
+### MaxDisplay
+*`int`*
+Denotes the maximum number of elements to fully show when printing before it condenses into a `a, b, c...x, y, z` structure.
+
+```lua
+local chars = {}
+
+for i = 97, 113 do
+    table.insert(chars, string.char(i)) -- chars from a-q
+end
+
+local MyList = List.new(chars)
+
+--defualt MaxDisplay = 10
+print(MyList) --List({a, b, c...o, p, q})
+
+List.MaxDisplay = 100
+print(MyList) --List({a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q})
+```
+### ShowDataTypeContents
+*`boolean`*
+If true, the `List` will show the parameters inside of the datatypes within (such as `CFrame`, `Vector3`, etc.), else it will appear blank:
+
+```lua
+local MyList = List.new({
+    Vector3.new(15, 25, 35),
+    ColorSequenceKeypoint.new(0.5, Color3.new(1, 1, 1)),
+    CatalogSearchParams.new()
+})
+
+--default ShowDataTypeContents = false
+
+print(MyList) --List({Vector3[], ColorSequenceKeypoint[], CatalogSearchParams[]})
+
+List.ShowDataTypeContents = true
+
+print(MyList) --List({Vector3[15, 25, 35], ColorSequenceKeypoint[0.5, (1, 1, 1)], CatalogSearchParams["", 0-2147483647, Relevance, None, {...}, {...}]})
+```
 
 ## Constructors
 ### new
