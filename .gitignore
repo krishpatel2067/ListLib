@@ -1,4 +1,5 @@
 .vscode
 .gitattributes
+.github
 docs
 mkdocs.yml
