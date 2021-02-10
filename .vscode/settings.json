@@ -1,7 +1,0 @@
-{
-    "explorer.sortOrder": "modified",
-    "Lua.diagnostics.disable": [
-        "\"redefined-local\"",
-        "incorrect-call-arguments"
-    ]
-}
