@@ -187,7 +187,6 @@ end)
 print(MyList:IsStolen()) --false
 MyList.Owner = 'coefficients'
 print(MyList:IsStolen()) --true
-
 ```
 ### Append
 *`void`*
@@ -254,7 +253,19 @@ This way, you can get the most numerous value like such:
 ```lua
 print(MyNewList:CountValues()[1][1]) --true
 ```
+### Destroy
+*`void`*
 
+Destroys the `List` object, empties the internal table, and sets every functionality unaccessible.
+
+```lua
+print(MyList[1]) --1
+
+MyList:Destroy()
+
+print(MyList[1]) --nil
+print(MyList:GetSum()) --error
+```
 ### Empty
 *`void`*
 
