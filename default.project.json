@@ -12,8 +12,16 @@
       "$className": "ServerScriptService",
 
       "ListLib": {
-        "$className": "Folder",
-        "$path": "src/Scripts"
+        "$path": "src/Scripts/ListLib.script.lua",
+        
+        "List": {
+          "$path": "src/Scripts/List.script.lua"
+        },
+
+        "NumList": {
+          "$path": "src/Scripts/NumList.script.lua"
+        }
+
       }
       
     }
