@@ -20,12 +20,14 @@ markdown_extensions:
   - attr_list
 nav:
   - Home: "index.md"
-  - DataTypes: "dtypes.md"
-  - Importing: "import.md"
+  - Quick Start:
+    - Installation: "installation.md"
+    - DataTypes: "dtypes.md"
+    - Importing: "import.md"
   - API:
     - List: "list.md" 
     - NumList: "numlist.md"
-  - Features: "features.md"
+  - More Features: "features.md"
 copyright: '&copy; 2021 TheCarbyneUniverse'
 extra:
   social:
