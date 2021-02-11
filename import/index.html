@@ -14,7 +14,7 @@
     
     
       
-        <title>Home - ListLib Documentation</title>
+        <title>Importing - ListLib Documentation</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#home" class="md-skip">
+        <a href="#importing" class="md-skip">
           Skip to content
         </a>
       
@@ -93,7 +93,7 @@
         <div class="md-header-nav__topic">
           <span class="md-ellipsis">
             
-              Home
+              Importing
             
           </span>
         </div>
@@ -167,7 +167,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="./" class="md-tabs__link md-tabs__link--active">
+      <a href=".." class="md-tabs__link md-tabs__link--active">
         Home
       </a>
     </li>
@@ -183,7 +183,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../Changelog/1.0.x/" class="md-tabs__link">
+      <a href="../1.0.x/" class="md-tabs__link">
         ChangeLog
       </a>
     </li>
@@ -265,20 +265,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
         Home
       </a>
-      
     </li>
   
 
@@ -286,12 +277,14 @@
             
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1-2" type="checkbox" id="nav-1-2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1-2" type="checkbox" id="nav-1-2" checked>
       
       <label class="md-nav__link" for="nav-1-2">
         Quick Start
@@ -310,7 +303,7 @@
   
   
     <li class="md-nav__item">
-      <a href="installation/" class="md-nav__link">
+      <a href="../installation/" class="md-nav__link">
         Installation
       </a>
     </li>
@@ -322,7 +315,7 @@
   
   
     <li class="md-nav__item">
-      <a href="dtypes/" class="md-nav__link">
+      <a href="../dtypes/" class="md-nav__link">
         DataTypes
       </a>
     </li>
@@ -332,11 +325,20 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="import/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Importing
       </a>
+      
     </li>
   
 
@@ -374,7 +376,7 @@
   
   
     <li class="md-nav__item">
-      <a href="list/" class="md-nav__link">
+      <a href="../list/" class="md-nav__link">
         List
       </a>
     </li>
@@ -386,7 +388,7 @@
   
   
     <li class="md-nav__item">
-      <a href="numlist/" class="md-nav__link">
+      <a href="../numlist/" class="md-nav__link">
         NumList
       </a>
     </li>
@@ -404,7 +406,7 @@
   
   
     <li class="md-nav__item">
-      <a href="features/" class="md-nav__link">
+      <a href="../features/" class="md-nav__link">
         More Features
       </a>
     </li>
@@ -447,7 +449,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Changelog/1.0.x/" class="md-nav__link">
+      <a href="../1.0.x/" class="md-nav__link">
         1.0.x
       </a>
     </li>
@@ -488,18 +490,26 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/TheCarbyneUniverse/ListLib/edit/master/docs/Home/index.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/TheCarbyneUniverse/ListLib/edit/master/docs/import.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="home">Home</h1>
-<p>ListLib is a powerful library that wraps regular Luau tables and adds much more functionality to them. Current Luau tables are very limited and don't cover most common use cases such as reversing, slicing, replacing, and operations.</p>
-<p>My original inspiration was Python's Numpy module, although it is much larger than ListLib. This started off with me practicing OOP, until I started drifting towards creating something I wanted to publish.</p>
-<hr />
-<p>Report bugs and request features here:</p>
-<p><a class="md-button" href="https://devforum.roblox.com/t/introducing-listlib-luau-tables-made-powerful-v1-0-0/1038349?u=thecarbyneuniverse">Official release post</a></p>
-<hr />
+                <h1 id="importing">Importing</h1>
+<p>The structure for ListLib is as follows:</p>
+<div class="highlight"><pre><span></span><code>ListLib
+    List
+    NumList
+</code></pre></div>
+<p>To easily load all the modules, you can require the base <code>ListLib</code> module which returns a function to import the other two:</p>
+<p><div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">import</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="n">ListLib</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">List</span><span class="p">,</span> <span class="n">NumList</span> <span class="o">=</span> <span class="n">import</span><span class="p">(</span><span class="s2">&quot;List&quot;</span><span class="p">,</span> <span class="s2">&quot;NumList&quot;</span><span class="p">)</span>
+</code></pre></div>
+The importation will return the module functionality in the order of parameters.</p>
+<div class="admonition note">
+<p class="admonition-title">Importing vs Requiring</p>
+<p>It is highly recommended that you use the import function because it will initialize that script's environment with updated in-built functions such as <code>pairs</code>, <code>type</code>, <code>typeof</code>, etc. to recognize these datatypes and treat them accordingly. In scripts that you pass the objects as parameters, for example, and <code>ListLib</code> isn't be imported, the script environments  will not be updated with these functions, so you must be the functions within the object itself such as <code>List:Pairs</code> and <code>List.__type</code> (for the above three).</p>
+</div>
                 
               
               
@@ -518,14 +528,28 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
+          <a href="../dtypes/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                DataTypes
+              </div>
+            </div>
+          </a>
         
-          <a href="installation/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+        
+          <a href="../list/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Installation
+                List
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
