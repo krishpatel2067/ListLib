@@ -1,6 +1,8 @@
 site_name: ListLib Documentation
 theme:
   name: material
+  icon:
+    repo: fontawesome/brands/git-alt
   logo: ListLib_Icon.png
   favicon: ListLib_Favicon.png
   font:
@@ -33,3 +35,4 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/TheCarbyneUniverse
       name: TheCarbyneUniverse on Github
+repo_name: https://github.com/TheCarbyneUniverse/ListLib
