@@ -3,7 +3,7 @@
 ## Method 1: Roblox Model
 
 1. Get the [model](https://www.roblox.com/library/6374598616/ListLib "ListLib Roblox model") from the website.
-2. In Roblox Studio, open the toolbar and go to *MyModels* tab.
+2. In Roblox Studio, open the toolbar and go to *My Models* tab.
 3. Find the ListLib model, then click to insert or drag to your desired location.
 
 ## Method 2: RBXM File
