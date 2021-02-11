@@ -21,17 +21,17 @@ markdown_extensions:
   - attr_list
 nav:
   - Home: 
-    - "Home/index.md"
+    - "index.md"
     - Quick Start:
-      - Installation: "Home/installation.md"
-      - DataTypes: "Home/dtypes.md"
-      - Importing: "Home/import.md"
+      - Installation: "installation.md"
+      - DataTypes: "dtypes.md"
+      - Importing: "import.md"
     - API:
-      - List: "Home/list.md" 
-      - NumList: "Home/numlist.md"
-    - More Features: "Home/features.md"
+      - List: "list.md" 
+      - NumList: "numlist.md"
+    - More Features: "features.md"
   - ChangeLog: 
-    - 1.0.x: "Changelog/1.0.x.md"
+    - 1.0.x: "1.0.x.md"
 extra:
   social:
     - icon: fontawesome/brands/twitter
