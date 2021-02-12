@@ -1077,15 +1077,17 @@ Above, the increment is 2.25 (which can be calculated by <code>(max - min) / (co
 <hr />
 <h2 id="properties">Properties</h2>
 <h3 id="inherited-from-list_1">Inherited from <code>List</code></h3>
-<p>These properties are inherited from <code>List</code> and work the same way:
-* <code>Alias</code>
-* <code>Length</code>
-* <code>__type</code></p>
+<p>These properties are inherited from <code>List</code> and work the same way:</p>
+<ul>
+<li><code>Alias</code></li>
+<li><code>Length</code></li>
+<li><code>__type</code></li>
+</ul>
 <hr />
 <h2 id="functions">Functions</h2>
 <h3 id="getavg">GetAvg</h3>
-<p><em><code>number</code></em>
-Gets the average of the numbers, equivalent to doing <code>NumList:GetSum() / NumList.Length</code>.</p>
+<p><em><code>number</code></em></p>
+<p>Gets the average of the numbers, equivalent to doing <code>NumList:GetSum() / NumList.Length</code>.</p>
 <h3 id="getfivepointsummary">GetFivePointSummary</h3>
 <p><em><code>table</code></em></p>
 <p>Gets the box-plot-related stats (minimum, first quartile, median, third quartile, and maximum) in a dictionary with the keys:
@@ -1095,8 +1097,8 @@ Gets the average of the numbers, equivalent to doing <code>NumList:GetSum() / Nu
 * <code>Q3</code>
 * <code>Max</code></p>
 <h3 id="getmad">GetMAD</h3>
-<p><em><code>number</code></em>
-Gets the mean absolute deviation of the <code>NumList</code>; the length must be greater than 0, else an error will be raised.</p>
+<p><em><code>number</code></em></p>
+<p>Gets the mean absolute deviation of the <code>NumList</code>; the length must be greater than 0, else an error will be raised.</p>
 <h3 id="getmax">GetMax</h3>
 <p><em><code>number</code></em></p>
 <p>Gets the maximum value from the <code>NumList</code>.</p>
@@ -1107,45 +1109,47 @@ Gets the mean absolute deviation of the <code>NumList</code>; the length must be
 <p><em><code>number</code></em></p>
 <p>Gets the minimum value from the <code>NumList</code>.</p>
 <h3 id="getmode">GetMode</h3>
-<p><em><code>table</code></em>
-Gets the mode of the set and returns the values in a table (since multiple values can appear the same number of times). If every value appears exactly once in the set, the mode will be <code>nil</code>.</p>
+<p><em><code>table</code></em></p>
+<p>Gets the mode of the set and returns the values in a table (since multiple values can appear the same number of times). If every value appears exactly once in the set, the mode will be <code>nil</code>.</p>
 <h3 id="getproduct">GetProduct</h3>
-<p><em><code>number</code></em>
-Simply gets the product of all the elements in the <code>NumList</code>.</p>
+<p><em><code>number</code></em></p>
+<p>Simply gets the product of all the elements in the <code>NumList</code>.</p>
 <h3 id="getq1">GetQ1</h3>
 <p><em><code>number</code></em></p>
 <p>Gets the first quartile of the set.</p>
 <h3 id="getq3">GetQ3</h3>
-<p><em><code>number</code></em>
-Gets the third quartile of the set.</p>
+<p><em><code>number</code></em></p>
+<p>Gets the third quartile of the set.</p>
 <h3 id="getrange">GetRange</h3>
-<p><em><code>number</code></em>
-Gets the range, the difference between the maximum and the minimum.</p>
+<p><em><code>number</code></em></p>
+<p>Gets the range, the difference between the maximum and the minimum.</p>
 <h3 id="getstats">GetStats</h3>
 <p><em><code>table</code></em></p>
-<p>Gets <em>all</em> the stats in a dictionary, with the keys:
-* <code>Min</code>
-* <code>Q1</code>
-* <code>Median</code>
-* <code>Q3</code>
-* <code>Max</code>
-* <code>Range</code>
-* <code>Sum</code>
-* <code>Product</code>
-* <code>Avg</code>
-* <code>Std</code>
-* <code>MAD</code>
-* <code>Mode</code> </p>
+<p>Gets <em>all</em> the stats in a dictionary, with the keys:</p>
+<ul>
+<li><code>Min</code></li>
+<li><code>Q1</code></li>
+<li><code>Median</code></li>
+<li><code>Q3</code></li>
+<li><code>Max</code></li>
+<li><code>Range</code></li>
+<li><code>Sum</code></li>
+<li><code>Product</code></li>
+<li><code>Avg</code></li>
+<li><code>Std</code></li>
+<li><code>MAD</code></li>
+<li><code>Mode</code> </li>
+</ul>
 <p>For <code>Mode</code>, the value will be <code>"None"</code> to represent <code>nil</code> because else the key will be non-existent.</p>
 <h3 id="getstd">GetStd</h3>
-<p><em><code>number</code></em>
-Gets the population standard deviation of the set of numbers; the length of the <code>NumList</code> must be greater than 1, else it will raise an error.</p>
+<p><em><code>number</code></em></p>
+<p>Gets the population standard deviation of the set of numbers; the length of the <code>NumList</code> must be greater than 1, else it will raise an error.</p>
 <h3 id="getsum">GetSum</h3>
 <p><em><code>number</code></em></p>
 <p>Simply gets the sum of all the elements in the <code>NumList</code>.</p>
 <h3 id="tobase">ToBase</h3>
-<p><em><code>table</code></em>
-<strong>Parameters</strong> (<code>int</code> base)</p>
+<p><em><code>table</code></em></p>
+<p><strong>Parameters</strong> (<code>int</code> base)</p>
 <p>Converts the current base-10 <code>NumList</code> values to the given <code>base</code>, which will be returned as a table (<em>not</em> a NumList) with string values. Also works with decimals.</p>
 <div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">MyNumList</span> <span class="o">=</span> <span class="n">NumList</span><span class="p">.</span><span class="n">new</span><span class="p">({</span><span class="mi">90</span><span class="p">,</span> <span class="mi">92</span><span class="p">,</span> <span class="mi">94</span><span class="p">,</span> <span class="mi">96</span><span class="p">,</span> <span class="mi">98</span><span class="p">,</span> <span class="mi">100</span><span class="p">})</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">MyNumList</span><span class="p">:</span><span class="n">ToBase</span><span class="p">(</span><span class="mi">16</span><span class="p">))</span> <span class="c1">--{&quot;5A&quot;, &quot;5C&quot;, &quot;5E&quot;, &quot;60&quot;, &quot;62&quot;, &quot;64&quot;}</span>
